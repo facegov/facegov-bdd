@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
-    "test:report": "cucumber-js --format html:cucumber-report.html"
+    "test": "cucumber-js --require 'features/**/*.ts' --require-module ts-node/register",
+    "test:report": "cucumber-js --require 'features/**/*.ts' --require-module ts-node/register --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
